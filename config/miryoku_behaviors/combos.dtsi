@@ -1,5 +1,5 @@
 #define TIMEOUT_MS 50
-#define WAIT_MS 180
+#define WAIT_MS 10
 
 / { 
     combos {

@@ -16,7 +16,7 @@
        combo_minus {
             require-prior-idle-ms = <WAIT_MS>;
             timeout-ms = <TIMEOUT_MS>;
-            key-positions = <9 10>;
+            key-positions = <9 41>;
             bindings = <&kp MINUS>;
             layers = <0>;
         };
@@ -24,7 +24,7 @@
         combo_equal {
             require-prior-idle-ms = <WAIT_MS>;
             timeout-ms = <TIMEOUT_MS>;
-            key-positions = <21 22>;
+            key-positions = <21 41>;
             bindings = <&kp EQUAL>;
             layers = <0>;
         };
@@ -32,7 +32,7 @@
         combo_under {
             require-prior-idle-ms = <WAIT_MS>;
             timeout-ms = <TIMEOUT_MS>;
-            key-positions = <35 36>;
+            key-positions = <35 41>;
             bindings = <&kp UNDER>;
             layers = <0>;
        };
@@ -40,7 +40,7 @@
         combo_bracket_close {
             require-prior-idle-ms = <WAIT_MS>;
             timeout-ms = <TIMEOUT_MS>;
-            key-positions = <7 8>;
+            key-positions = <7 41>;
             bindings = <&kp RBKT>;
             layers = <0>;
         };
@@ -48,7 +48,7 @@
         combo_braces_close {
             require-prior-idle-ms = <WAIT_MS>;
             timeout-ms = <TIMEOUT_MS>;
-            key-positions = <19 20>;
+            key-positions = <19 41>;
             bindings = <&kp RBRC>;
             layers = <0>;
         };
@@ -56,7 +56,7 @@
         combo_paran_close {
             require-prior-idle-ms = <WAIT_MS>;
             timeout-ms = <TIMEOUT_MS>;
-            key-positions = <33 34>;
+            key-positions = <33 41>;
             bindings = <&kp RPAR>;
             layers = <0>;
         };   
@@ -64,7 +64,7 @@
        combo_single_quote {
             require-prior-idle-ms = <WAIT_MS>;
             timeout-ms = <TIMEOUT_MS>;
-            key-positions = <8 9>;
+            key-positions = <8 41>;
             bindings = <&kp SQT>;
             layers = <0>;
         };
@@ -72,7 +72,7 @@
         combo_double_quote {
             require-prior-idle-ms = <WAIT_MS>;
             timeout-ms = <TIMEOUT_MS>;
-            key-positions = <20 21>;
+            key-positions = <20 41>;
             bindings = <&kp DQT>;
             layers = <0>;
         };    
@@ -80,7 +80,7 @@
         combo_back_ticks {
             require-prior-idle-ms = <WAIT_MS>;
             timeout-ms = <TIMEOUT_MS>;
-            key-positions = <34 35>;
+            key-positions = <34 41>;
             bindings = <&kp GRAVE>;
             layers = <0>;
         };   
@@ -88,7 +88,7 @@
         combo_bracket_open {
             require-prior-idle-ms = <WAIT_MS>;
             timeout-ms = <TIMEOUT_MS>;
-            key-positions = <3 4>;
+            key-positions = <40 4>;
             bindings = <&kp LBKT>;
             layers = <0>;
         };
@@ -96,7 +96,7 @@
         combo_braces_open {
             require-prior-idle-ms = <WAIT_MS>;
             timeout-ms = <TIMEOUT_MS>;
-            key-positions = <15 16>;
+            key-positions = <40 16>;
             bindings = <&kp LBRC>;
             layers = <0>;
         };
@@ -104,7 +104,7 @@
         combo_paran_open {
             require-prior-idle-ms = <WAIT_MS>;
             timeout-ms = <TIMEOUT_MS>;
-            key-positions = <27 28>;
+            key-positions = <40 28>;
             bindings = <&kp LPAR>;
             layers = <0>;
         };    
@@ -112,7 +112,7 @@
         combo_esc {
             require-prior-idle-ms = <WAIT_MS>;
             timeout-ms = <TIMEOUT_MS>;
-            key-positions = <14 15>;
+            key-positions = <40 15>;
             bindings = <&kp ESC>;
             layers = <0>;
         };
@@ -120,7 +120,7 @@
         combo_tab {
             require-prior-idle-ms = <WAIT_MS>;
             timeout-ms = <TIMEOUT_MS>;
-            key-positions = <13 14>;
+            key-positions = <40 14>;
             bindings = <&kp TAB>;
             layers = <0>;
         };    
@@ -128,7 +128,7 @@
         combo_del {
             require-prior-idle-ms = <WAIT_MS>;
             timeout-ms = <TIMEOUT_MS>;
-            key-positions = <26 27>;
+            key-positions = <40 27>;
             bindings = <&kp DEL>;
             layers = <0>;
         };    

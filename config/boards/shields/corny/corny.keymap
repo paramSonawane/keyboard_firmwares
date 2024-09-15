@@ -94,7 +94,7 @@
                 U_NU &u_out_tog  &u_to_U_TAP &u_to_U_EXTRA &u_to_U_BASE U_NA                           &u_bt_sel_0 &u_bt_sel_1 &u_bt_sel_2 &u_bt_sel_3 &u_bt_sel_4  &bootloader
                 U_NU &kp LGUI    &kp LALT    &kp LCTRL     &kp LSHFT    &kp HYP                        &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &u_caps_word &sys_reset
                 U_NU &u_to_U_FUN &kp RALT    &u_to_U_NUM   &u_to_U_NAV  U_NA    &kp C_BRI_AUTO    U_NA &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &kp INS      &soff
-                                             U_NA          U_NA         U_NA                           &kp RET     &kp SPACE   &kp DEL
+                                             U_NA          U_NA         &kp DEL                        &kp RET     &kp SPACE   &kp DEL
             >;
             sensor-bindings = <
                 &inc_dec_kp C_BRI_UP C_BRI_DN &inc_dec_kp UP DOWN

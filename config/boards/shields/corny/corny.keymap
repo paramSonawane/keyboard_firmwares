@@ -41,14 +41,22 @@
 #define U_NP &none // key is not present
 #define U_NA &none // present but not available for use
 #define U_NU &none // available but not used
-#define M_SENS 900
-#define MOUSE_UP &mmv MOVE_Y(-M_SENS)
-#define MOUSE_DN &mmv MOVE_Y(M_SENS)
-#define MOUSE_LF &mmv MOVE_X(-M_SENS)
-#define MOUSE_RT &mmv MOVE_X(M_SENS)
-#define MOUSE_FST &mmv MOVE_X(3)
-#define MOUSE_SLW &mmv MOVE_X(1)
-#define MOUSE_NRML &mmv MOVE_X(2)
+#define M_SENS 1000
+//#define MOUSE_UP &mmv MOVE_Y(-M_SENS)
+//#define MOUSE_DN &mmv MOVE_Y(M_SENS)
+//#define MOUSE_LF &mmv MOVE_X(-M_SENS)
+//#define MOUSE_RT &mmv MOVE_X(M_SENS)
+//#define MOUSE_FST &mmv MOVE_X(3)
+//#define MOUSE_SLW &mmv MOVE_X(1)
+//#define MOUSE_NRML &mmv MOVE_X(2)
+
+#define MOUSE_UP &mmv MOVE_UP
+#define MOUSE_DN &mmv MOVE_DN
+#define MOUSE_LF &mmv MOVE_LEFT
+#define MOUSE_RT &mmv MOVE_RIGHT
+#define MOUSE_FST U_NA
+#define MOUSE_SLW U_NA
+#define MOUSE_NRML U_NA
 
 / {
     keymap {

@@ -1,13 +1,13 @@
 manifest:
   remotes:
-    - name: paramSonawane
-      url-base: https://github.com/paramSonawane
+    - name: petejohanson
+      url-base: https://github.com/petejohanson
     - name: caksoylar
       url-base: https://github.com/caksoylar
   projects:
     - name: zmk
-      remote: paramSonawane
-      revision: upstream-mouse-support-linux-accel
+      remote: petejohanson
+      revision: feat/pointers-move-scroll
       import: app/west.yml
     - name: zmk-rgbled-widget
       remote: caksoylar

@@ -43,10 +43,6 @@
 #define U_NU &none // available but not used
 #define M_SENS 1000
 
-#define MOUSE_UP &mmv MOVE_UP
-#define MOUSE_DN &mmv MOVE_DN
-#define MOUSE_LF &mmv MOVE_LEFT
-#define MOUSE_RT &mmv MOVE_RIGHT
 #define MOUSE_FST U_NA
 #define MOUSE_SLW U_NA
 #define MOUSE_NRML U_NA
@@ -122,10 +118,10 @@
         };
         U_MOUSE {
             bindings = <
-                U_NU MOUSE_SLW  U_BTN4   MOUSE_UP U_BTN5   U_NA             U_RDO   MOUSE_SLW MOUSE_NRML MOUSE_FST U_CUT    U_NU
-                U_NU MOUSE_NRML MOUSE_LF MOUSE_DN MOUSE_RT U_NA             &kp HYP &kp LSHFT &kp LCTRL  &kp LALT  &kp LGUI U_NU
-                U_NU MOUSE_FST  U_NA     U_NA     U_NA     U_NA   U_NU U_NU U_WH_L  U_WH_D    U_WH_U     U_WH_R    U_NU     U_NU
-                                         U_BTN3   U_BTN2   U_BTN1           U_NA    U_NA      U_NA                 
+                U_NU MOUSE_SLW  U_BTN4   U_MS_U U_BTN5 U_NA             U_RDO   MOUSE_SLW MOUSE_NRML MOUSE_FST U_CUT    U_NU
+                U_NU MOUSE_NRML U_MS_L   U_MS_D U_MS_R U_NA             &kp HYP &kp LSHFT &kp LCTRL  &kp LALT  &kp LGUI U_NU
+                U_NU MOUSE_FST  U_NA     U_NA   U_NA   U_NA   U_NU U_NU U_WH_L  U_WH_D    U_WH_U     U_WH_R    U_NU     U_NU
+                                         U_BTN3 U_BTN2 U_BTN1           U_NA    U_NA      U_NA                 
             >;
             sensor-bindings = <
                 &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN

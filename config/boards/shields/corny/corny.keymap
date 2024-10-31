@@ -43,10 +43,6 @@
 #define U_NU &none // available but not used
 #define M_SENS 1000
 
-#define MOUSE_FST U_NA
-#define MOUSE_SLW U_NA
-#define MOUSE_NRML U_NA
-
 / {
     keymap {
         compatible = "zmk,keymap";

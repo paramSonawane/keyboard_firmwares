@@ -1,9 +1,9 @@
 #include <behaviors.dtsi>
-#include <behaviors/mouse_key_press.dtsi>
+
 #if defined (MIRYOKU_KLUDGE_MOUSEKEYSPR)
-  #include <behaviors/mouse_move.dtsi>
-  #include <behaviors/mouse_scroll.dtsi>
+  #include <dt-bindings/zmk/pointing.h>
 #endif
+
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
@@ -46,9 +46,7 @@
 #define MOUSE_DN &mmv MOVE_Y(M_SENS)
 #define MOUSE_LF &mmv MOVE_X(-M_SENS)
 #define MOUSE_RT &mmv MOVE_X(M_SENS)
-#define MOUSE_FST U_NA
-#define MOUSE_SLW U_NA
-#define MOUSE_NRML U_NA
+
 #
 / {
     keymap {
@@ -58,7 +56,7 @@
             bindings = <
                 &kp LG(N1)  &kp Q             &kp W         &kp E          &kp R          &kp T                          &kp Y              &kp U          &kp I          &kp O           &kp P                &kp LG(N4)
                 &kp LG(N2)  U_MT(LGUI, A)     U_MT(LALT, S) U_MT(LCTRL, D) U_MT(LSHFT, F) U_MT(HYP, G)                   U_MT(HYP, H)       U_MT(LSHFT, J) U_MT(LCTRL, K) U_MT(LALT, L)   U_MT(LGUI, SEMI)      &kp LG(N5)
-                &kp LG(N3) U_LT(U_BUTTON, Z) U_MT(RALT, X) &kp C          &kp V          &kp B             &kp C_PP U_NU &kp N              &kp M          &kp COMMA      U_MT(RALT, DOT) U_LT(U_BUTTON, SLASH) &kp LG(N6)
+                U&kp LG(N3) U_LT(U_BUTTON, Z) U_MT(RALT, X) &kp C          &kp V          &kp B             &kp C_PP U_NU &kp N              &kp M          &kp COMMA      U_MT(RALT, DOT) U_LT(U_BUTTON, SLASH) &kp LG(N6)
                                                             &mo U_FUN      &mo U_SYM      U_LT(U_NUM, BSPC)              U_LT(U_NAV, SPACE) &mo U_MOUSE    U_NU
             >;
             sensor-bindings = <
@@ -121,10 +119,10 @@
         };
         U_MOUSE {
             bindings = <
-                U_NU MOUSE_SLW  U_BTN4   MOUSE_UP U_BTN5   U_NA             U_RDO   MOUSE_SLW MOUSE_NRML MOUSE_FST U_CUT    U_NU
-                U_NU MOUSE_NRML MOUSE_LF MOUSE_DN MOUSE_RT U_NA             &kp HYP &kp LSHFT &kp LCTRL  &kp LALT  &kp LGUI U_NU
-                U_NU MOUSE_FST  U_NA     U_NA     U_NA     U_NA   U_NU U_NU U_WH_L  U_WH_D    U_WH_U     U_WH_R    U_NU     U_NU
-                                         U_BTN3   U_BTN2   U_BTN1           U_NA    U_NA      U_NA                 
+                U_NU U_NA U_BTN4   MOUSE_UP U_BTN5   U_NA             U_RDO   U_NA      U_NA       U_NA      U_CUT    U_NU
+                U_NU U_NA MOUSE_LF MOUSE_DN MOUSE_RT U_NA             &kp HYP &kp LSHFT &kp LCTRL  &kp LALT  &kp LGUI U_NU
+                U_NU U_NA U_NA     U_NA     U_NA     U_NA   U_NU U_NU U_WH_L  U_WH_D    U_WH_U     U_WH_R    U_NU     U_NU
+                                   U_BTN3   U_BTN2   U_BTN1           U_NA    U_NA      U_NA                 
             >;
             sensor-bindings = <
                 &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN

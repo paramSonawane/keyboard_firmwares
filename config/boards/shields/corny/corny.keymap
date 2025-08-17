@@ -1,13 +1,10 @@
 #include <behaviors.dtsi>
 
-#if defined (MIRYOKU_KLUDGE_MOUSEKEYSPR)
-  #include <dt-bindings/zmk/pointing.h>
-#endif
-
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/ext_power.h>
 
 #define U_TAPPING_TERM 200

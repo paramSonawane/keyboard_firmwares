@@ -51,10 +51,10 @@
 
         U_BASE {
             bindings = <
-                &kp LG(N1)  &kp Q             &kp W         &kp E          &kp R          &kp T                          &kp Y              &kp U          &kp I          &kp O           &kp P                &kp LG(N4)
-                &kp LG(N2)  U_MT(LGUI, A)     U_MT(LALT, S) U_MT(LCTRL, D) U_MT(LSHFT, F) U_MT(HYP, G)                   U_MT(HYP, H)       U_MT(LSHFT, J) U_MT(LCTRL, K) U_MT(LALT, L)   U_MT(LGUI, SEMI)      &kp LG(N5)
-                U&kp LG(N3) U_LT(U_BUTTON, Z) U_MT(RALT, X) &kp C          &kp V          &kp B             &kp C_PP U_NU &kp N              &kp M          &kp COMMA      U_MT(RALT, DOT) U_LT(U_BUTTON, SLASH) &kp LG(N6)
-                                                            &mo U_FUN      &mo U_SYM      U_LT(U_NUM, BSPC)              U_LT(U_NAV, SPACE) &mo U_MOUSE    U_NU
+                &kp LG(N1) &kp Q             &kp W         &kp E          &kp R          &kp T                           &kp Y              &kp U          &kp I          &kp O           &kp P                 &kp LG(N4)
+                &kp LG(N2) U_MT(LGUI, A)     U_MT(LALT, S) U_MT(LCTRL, D) U_MT(LSHFT, F) U_MT(HYP, G)                    U_MT(HYP, H)       U_MT(LSHFT, J) U_MT(LCTRL, K) U_MT(LALT, L)   U_MT(LGUI, SEMI)      &kp LG(N5)
+                &kp LG(N3) U_LT(U_BUTTON, Z) U_MT(RALT, X) &kp C          &kp V          &kp B             &kp C_PP U_NU &kp N              &kp M          &kp COMMA      U_MT(RALT, DOT) U_LT(U_BUTTON, SLASH) &kp LG(N6)
+                                                           &mo U_FUN      &mo U_SYM      U_LT(U_NUM, BSPC)               U_LT(U_NAV, SPACE) &mo U_MOUSE    U_NU
             >;
             sensor-bindings = <
                 &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp UP DOWN
@@ -116,10 +116,10 @@
         };
         U_MOUSE {
             bindings = <
-                &kp N1 &kp Q &kp W &kp E   &kp R     &kp T                             &kp Y   &kp U     &kp I     &kp O   &kp P     &kp N4
-                &kp N2 &kp A &kp S &kp D   &kp F     &kp G                             &kp H   &kp J     &kp K     &kp L   &kp SQT   &kp N5
-                &kp N3 &kp Z &kp X &kp C   &kp V     &kp B   &u_to_U_BASE &u_to_U_BASE &kp N   &kp M     &kp COMMA &kp DOT &kp SLASH &kp N6
-                                   &kp TAB &kp SPACE &kp ESC                           &kp RET &kp SPACE &kp BSPC
+                U_NU U_NA U_BTN4   MOUSE_UP U_BTN5   U_NA             U_RDO   U_NA      U_NA       U_NA      U_CUT    U_NU
+                U_NU U_NA MOUSE_LF MOUSE_DN MOUSE_RT U_NA             &kp HYP &kp LSHFT &kp LCTRL  &kp LALT  &kp LGUI U_NU
+                U_NU U_NA U_NA     U_NA     U_NA     U_NA   U_NU U_NU U_WH_L  U_WH_D    U_WH_U     U_WH_R    U_NU     U_NU
+                                   U_BTN3   U_BTN2   U_BTN1           U_NA    U_NA      U_NA                 
             >;
             sensor-bindings = <
                 &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN

@@ -9,7 +9,6 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/ext_power.h>
-#include <dt-bindings/zmk/mouse.h>
 
 #define U_TAPPING_TERM 200
 
@@ -34,6 +33,7 @@
 #include "../../../miryoku_behaviors/miryoku_shift_functions.h"
 #include "../../../miryoku_behaviors/miryoku_shift_functions.dtsi"
 #include "../../../miryoku_behaviors/miryoku_kludge_mousekeyspr.h"
+#include "../../../miryoku_behaviors/miryoku_kludge_mousekeyspr.dtsi"
 #include "../../../miryoku_behaviors/miryoku_behaviors.dtsi"
 #include "../../../miryoku_behaviors/miryoku_behaviors.h"
 #include "../../../miryoku_behaviors/combos.dtsi"

@@ -29,10 +29,10 @@
 #include "../../../miryoku_behaviors/miryoku_double_tap_guard.h"
 #include "../../../miryoku_behaviors/miryoku_shift_functions.h"
 #include "../../../miryoku_behaviors/miryoku_shift_functions.dtsi"
-#include "../../../miryoku_behaviors/miryoku_kludge_mousekeyspr.h"
-#include "../../../miryoku_behaviors/miryoku_kludge_mousekeyspr.dtsi"
 #include "../../../miryoku_behaviors/miryoku_behaviors.dtsi"
 #include "../../../miryoku_behaviors/miryoku_behaviors.h"
+#include "../../../miryoku_behaviors/miryoku_kludge_mousekeyspr.h"
+#include "../../../miryoku_behaviors/miryoku_kludge_mousekeyspr.dtsi"
 #include "../../../miryoku_behaviors/combos.dtsi"
 
 #define U_NP &none // key is not present
@@ -116,10 +116,10 @@
         };
         U_MOUSE {
             bindings = <
-                U_NU U_NA U_BTN4   MOUSE_UP U_BTN5   U_NA             U_RDO   U_NA      U_NA       U_NA      U_CUT    U_NU
-                U_NU U_NA MOUSE_LF MOUSE_DN MOUSE_RT U_NA             &kp HYP &kp LSHFT &kp LCTRL  &kp LALT  &kp LGUI U_NU
-                U_NU U_NA U_NA     U_NA     U_NA     U_NA   U_NU U_NU U_WH_L  U_WH_D    U_WH_U     U_WH_R    U_NU     U_NU
-                                   U_BTN3   U_BTN2   U_BTN1           U_NA    U_NA      U_NA                 
+                &kp N1 &kp Q &kp W &kp E   &kp R     &kp T                             &kp Y   &kp U     &kp I     &kp O   &kp P     &kp N4
+                &kp N2 &kp A &kp S &kp D   &kp F     &kp G                             &kp H   &kp J     &kp K     &kp L   &kp SQT   &kp N5
+                &kp N3 &kp Z &kp X &kp C   &kp V     &kp B   &u_to_U_BASE &u_to_U_BASE &kp N   &kp M     &kp COMMA &kp DOT &kp SLASH &kp N6
+                                   &kp TAB &kp SPACE &kp ESC                           &kp RET &kp SPACE &kp BSPC
             >;
             sensor-bindings = <
                 &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN

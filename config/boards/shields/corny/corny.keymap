@@ -42,7 +42,7 @@
             bindings = <
                 &kp LG(N1) &kp Q             &kp W         &kp E          &kp R          &kp T                           &kp Y              &kp U          &kp I          &kp O           &kp P                 &kp LG(N4)
                 &kp LG(N2) U_MT(LGUI, A)     U_MT(LALT, S) U_MT(LCTRL, D) U_MT(LSHFT, F) U_MT(HYP, G)                    U_MT(HYP, H)       U_MT(LSHFT, J) U_MT(LCTRL, K) U_MT(LALT, L)   U_MT(LGUI, SEMI)      &kp LG(N5)
-                &kp LG(N3) U_LT(U_BUTTON, Z) U_MT(RALT, X) &kp C          &kp V          &kp B             &kp C_PP U_NU &kp N              &kp M          &kp COMMA      U_MT(RALT, DOT) U_LT(U_BUTTON, SLASH) &kp LG(N6)
+                &kp LG(N3) &kp Z         U_MT(RALT, X) &kp C          &kp V          &kp B             &kp C_PP U_NU &kp N              &kp M          &kp COMMA      U_MT(RALT, DOT)     &kp SLASH  &kp LG(N6)
                                                            &mo U_FUN      &mo U_SYM      U_LT(U_NUM, BSPC)               U_LT(U_NAV, SPACE) &mo U_MOUSE    U_NU
             >;
             sensor-bindings = <

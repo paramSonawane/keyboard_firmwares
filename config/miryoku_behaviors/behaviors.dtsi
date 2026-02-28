@@ -11,7 +11,6 @@ MIRYOKU_SHIFT_FUNCTION(u_caps_word, &caps_word, &kp CAPS)
 MIRYOKU_SHIFT_FUNCTION(u_ep_tog, &ext_power EP_TOG, &ext_power EP_OFF)
 
 MIRYOKU_DOUBLE_TAP_GUARD(u_bootloader, &bootloader)
-MIRYOKU_DOUBLE_TAP_GUARD(u_suspend, &suspend)
 
 
 / {

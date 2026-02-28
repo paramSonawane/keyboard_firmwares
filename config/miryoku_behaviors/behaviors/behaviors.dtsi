@@ -1,8 +1,8 @@
 #include "config.h"
-#include "layer_tap/behavior.dtsi"
-#include "mod_morph/behavior.dtsi"
-#include "mod_tap/behavior.dtsi"
-#include "double_tap/behavior.dtsi"
+#include "layer_tap/behaviors.dtsi"
+#include "mod_morph/behaviors.dtsi"
+#include "mod_tap/behaviors.dtsi"
+#include "double_tap/behaviors.dtsi"
 
 
 / {

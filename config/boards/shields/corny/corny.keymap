@@ -53,10 +53,10 @@
 
         U_SYM {
             bindings = <
-                U_NA &u_to_U_BASE &u_to_U_EXTRA &u_to_U_TAP U_BOOT    U_NU                 &kp LBRC  &kp AMPS &kp ASTRK &kp LPAR  &kp RBRC U_NU
-                U_NA &kp LGUI     &kp LALT      &kp LCTRL   &kp LSHFT &kp HYP              &kp DQT   &kp DLLR &kp PRCNT &kp CARET &kp PLUS U_NU
-                U_NA &u_to_U_SYM  &u_to_U_MOUSE &kp RALT    U_NA      U_NU    U_NU    U_NU &kp TILDE &kp EXCL &kp AT    &kp HASH  &kp PIPE U_NU
-                                                U_NA        U_NA      U_NA                 &kp UNDER &kp LPAR &kp RPAR
+                U_NA &u_to_U_BASE U_NA          U_NA      U_BOOT    U_NU                 &kp LBRC  &kp AMPS &kp ASTRK &kp LPAR  &kp RBRC U_NU
+                U_NA &kp LGUI     &kp LALT      &kp LCTRL &kp LSHFT &kp HYP              &kp DQT   &kp DLLR &kp PRCNT &kp CARET &kp PLUS U_NU
+                U_NA &u_to_U_SYM  &u_to_U_MOUSE &kp RALT  U_NA      U_NU    U_NU    U_NU &kp TILDE &kp EXCL &kp AT    &kp HASH  &kp PIPE U_NU
+                                                U_NA      U_NA      U_NA                 &kp UNDER &kp LPAR &kp RPAR
             >;
             sensor-bindings = <
                 &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp UP DOWN
@@ -65,10 +65,10 @@
 
         U_NAV {
             bindings = <
-                U_NU &u_out_tog  &u_to_U_TAP &u_to_U_EXTRA &u_to_U_BASE U_NA                           &u_bt_sel_0 &u_bt_sel_1 &u_bt_sel_2 &u_bt_sel_3 &u_bt_sel_4  &bootloader
-                U_NU &kp LGUI    &kp LALT    &kp LCTRL     &kp LSHFT    &kp HYP                        &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &u_caps_word &sys_reset
-                U_NU &u_to_U_FUN &kp RALT    &u_to_U_NUM   &u_to_U_NAV  U_NA    &kp C_BRI_AUTO    U_NA &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &kp INS      &soff
-                                             U_NA          U_NA         &kp DEL                        &kp RET     &kp SPACE   &kp DEL
+                U_NU &u_out_tog  U_NA     U_NA        &u_to_U_BASE U_NA                           &u_bt_sel_0 &u_bt_sel_1 &u_bt_sel_2 &u_bt_sel_3 &u_bt_sel_4  &bootloader
+                U_NU &kp LGUI    &kp LALT &kp LCTRL   &kp LSHFT    &kp HYP                        &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &u_caps_word &sys_reset
+                U_NU &u_to_U_FUN &kp RALT &u_to_U_NUM &u_to_U_NAV  U_NA    &kp C_BRI_AUTO    U_NA &kp HOME    &kp PG_DN   &kp PG_UP   &kp END     &kp INS      &soff
+                                          U_NA        U_NA         &kp DEL                        &kp RET     &kp SPACE   &kp DEL
             >;
             sensor-bindings = <
                 &inc_dec_kp C_BRI_UP C_BRI_DN &inc_dec_kp UP DOWN
@@ -77,10 +77,10 @@
 
         U_FUN {
             bindings = <
-                U_NU &u_to_U_BASE &u_to_U_EXTRA &u_to_U_TAP U_BOOT    U_NU                 &kp PSCRN       &kp F7    &kp F8    &kp F9    &kp F10 U_NA
-                U_NU &kp LGUI     &kp LALT      &kp LCTRL   &kp LSHFT &kp HYP              &kp SLCK        &kp F4    &kp F5    &kp F6    &kp F11 U_NA
-                U_NU &u_to_U_FUN  &u_to_U_MEDIA &kp RALT    U_NA      U_NU    U_NU    U_NU &kp PAUSE_BREAK &kp F1    &kp F2    &kp F3    &kp F12 U_NA
-                                                U_NA        U_NA      U_NA                 &kp K_APP       &kp SPACE &kp BSPC
+                U_NU &u_to_U_BASE U_NA     U_NA      U_BOOT    U_NU                 &kp PSCRN       &kp F7    &kp F8    &kp F9    &kp F10 U_NA
+                U_NU &kp LGUI     &kp LALT &kp LCTRL &kp LSHFT &kp HYP              &kp SLCK        &kp F4    &kp F5    &kp F6    &kp F11 U_NA
+                U_NU &u_to_U_FUN  U_NA     &kp RALT  U_NA      U_NU    U_NU    U_NU &kp PAUSE_BREAK &kp F1    &kp F2    &kp F3    &kp F12 U_NA
+                                           U_NA      U_NA      U_NA                 &kp K_APP       &kp SPACE &kp BSPC
             >;
             sensor-bindings = <
                 &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN

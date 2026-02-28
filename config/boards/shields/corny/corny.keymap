@@ -14,13 +14,8 @@
 #include "../../../miryoku_behaviors/behaviors.h"
 #include "../../../miryoku_behaviors/behaviors.dtsi"
 #include "../../../miryoku_behaviors/combos/combos.dtsi"
-#include "../../../miryoku_behaviors/miryoku_kludge_mousekeyspr.h"
-#include "../../../miryoku_behaviors/miryoku_kludge_mousekeyspr.dtsi"
+#include "../../../miryoku_behaviors/mouse/mouse.h"
 
-#define MOUSE_UP &mmv MOVE_Y(-M_SENS)
-#define MOUSE_DN &mmv MOVE_Y(M_SENS)
-#define MOUSE_LF &mmv MOVE_X(-M_SENS)
-#define MOUSE_RT &mmv MOVE_X(M_SENS)
 
 #
 / {
@@ -89,10 +84,10 @@
 
         U_MOUSE {
             bindings = <
-                U_NU U_NA U_BTN4   MOUSE_UP U_BTN5   U_NA             U_RDO   U_NA      U_NA       U_NA      U_CUT    U_NU
-                U_NU U_NA MOUSE_LF MOUSE_DN MOUSE_RT U_NA             &kp HYP &kp LSHFT &kp LCTRL  &kp LALT  &kp LGUI U_NU
-                U_NU U_NA U_NA     U_NA     U_NA     U_NA   U_NU U_NU U_WH_L  U_WH_D    U_WH_U     U_WH_R    U_NU     U_NU
-                                   U_BTN3   U_BTN2   U_BTN1           U_NA    U_NA      U_NA
+                U_NU U_NA U_BTN4 U_MS_U U_BTN5 U_NA             U_RDO   U_NA      U_NA       U_NA      U_CUT    U_NU
+                U_NU U_NA U_MS_L U_MS_D U_MS_R U_NA             &kp HYP &kp LSHFT &kp LCTRL  &kp LALT  &kp LGUI U_NU
+                U_NU U_NA U_NA   U_NA   U_NA   U_NA   U_NU U_NU U_WH_L  U_WH_D    U_WH_U     U_WH_R    U_NU     U_NU
+                                 U_BTN3 U_BTN2 U_BTN1           U_NA    U_NA      U_NA
             >;
             sensor-bindings = <
                 &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN

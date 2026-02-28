@@ -1,7 +1,7 @@
 #include "../constants.h"
 #include "../macros.dtsi"
 #include "switches.h"
-#include "../../common/combos.dtsi"
+#include "../common/combos.dtsi"
 
 
 / {

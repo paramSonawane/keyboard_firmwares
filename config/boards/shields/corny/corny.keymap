@@ -9,8 +9,8 @@
 
 #include "../../../miryoku_behaviors/configs.h"
 #include "../../../miryoku_behaviors/constants.h"
-#include "../../../miryoku_behaviors/macros.dtsi"
 #include "../../../miryoku_behaviors/miryoku_babel/miryoku_layer_list.h"
+#include "../../../miryoku_behaviors/macros.dtsi"
 #include "../../../miryoku_behaviors/combos/combos.dtsi"
 #include "../../../miryoku_behaviors/miryoku_clipboard.h"
 #include "../../../miryoku_behaviors/miryoku_shift_functions.h"

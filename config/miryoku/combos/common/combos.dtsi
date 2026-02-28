@@ -1,8 +1,3 @@
-#include "constants.h"
-#include "macros.dtsi"
-#include "switches.h"
-
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -51,10 +46,6 @@
 
        // _
        COMBO(U_BASE, BOTTOM_RIGHTRING, RIGHT_THUMB_OUTER, &kp UNDER)
-
-        // TODO: disable wait time
-        // enter
-        COMBO(U_BASE, RIGHT_THUMB_OUTER, LEFT_THUMB_OUTER, &kp RET)
 
         // caps lock
         COMBO(U_BASE, MIDDLE_LEFTINDEX, MIDDLE_RIGHTINDEX, &caps_word)

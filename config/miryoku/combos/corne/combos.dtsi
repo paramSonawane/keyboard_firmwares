@@ -1,0 +1,15 @@
+#include "../constants.h"
+#include "../macros.dtsi"
+#include "switches.h"
+#include "../common/combos.dtsi"
+
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+        // TODO: disable wait time
+        // enter
+        COMBO(U_BASE, RIGHT_THUMB_OUTER, LEFT_THUMB_OUTER, &kp RET)
+    };
+};

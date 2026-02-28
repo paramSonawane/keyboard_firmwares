@@ -11,7 +11,7 @@
 #include "../../../miryoku/macros.dtsi"
 #include "../../../miryoku/behaviors/behaviors.dtsi"
 #include "../../../miryoku/layers/layers.h"
-#include "../../../miryoku/combos/combos.dtsi"
+#include "../../../miryoku/combos/corne/combos.dtsi"
 #include "../../../miryoku/mouse/mouse.h"
 
 

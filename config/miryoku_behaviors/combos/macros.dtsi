@@ -6,5 +6,3 @@ combos_ ## LAYER ## _ ## KEY1 ## KEY2 { \
   key-positions = <KEY1 KEY2>; \
   bindings = <BINDING>; \
 };
-
-#define SWITCH(ROW, COL) TOTAL_SWITCHES * ROW + COL

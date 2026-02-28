@@ -5,12 +5,12 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
-#include "../../../miryoku_behaviors/constants.h"
-#include "../../../miryoku_behaviors/macros.dtsi"
-#include "../../../miryoku_behaviors/behaviors/behaviors.dtsi"
-#include "../../../miryoku_behaviors/layers/layers.h"
-//#include "../../../miryoku_behaviors/combos/combos.dtsi"
-#include "../../../miryoku_behaviors/mouse/mouse.h"
+#include "../../../miryoku/constants.h"
+#include "../../../miryoku/macros.dtsi"
+#include "../../../miryoku/behaviors/behaviors.dtsi"
+#include "../../../miryoku/layers/layers.h"
+//#include "../../../miryoku/combos/combos.dtsi"
+#include "../../../miryoku/mouse/mouse.h"
 
 / {
     keymap {

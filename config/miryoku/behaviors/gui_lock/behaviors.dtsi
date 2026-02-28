@@ -1,0 +1,12 @@
+/ {
+  behaviors {
+    u_gui_lk: u_gui_lk {
+       compatible = "zmk,behavior-hold-tap";
+      #binding-cells = <2>;
+       flavor = "hold-preferred";
+       tapping-term-ms = <U_TAPPING_TERM>;
+       quick-tap-ms = <0>;
+       bindings = <&kp>, <&none>;
+    };
+  };
+};

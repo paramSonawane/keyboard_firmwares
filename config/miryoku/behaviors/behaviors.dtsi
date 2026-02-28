@@ -3,6 +3,7 @@
 #include "mod_morph/behaviors.dtsi"
 #include "mod_tap/behaviors.dtsi"
 #include "double_tap/behaviors.dtsi"
+#include "gui_lock/behaviors.dtsi"
 
 
 / {
@@ -21,6 +22,7 @@
 #define U_MT(MOD, TAP) &u_mt MOD TAP
 #define U_LT(LAYER, TAP) &u_lt LAYER TAP
 #define HYP LS(LC(LA(LGUI)))
+#define GUI_LK(MOD) &u_gui_lk MOD 0
 
 #define U_RDO &kp K_AGAIN
 #define U_PST &kp LS(INS)

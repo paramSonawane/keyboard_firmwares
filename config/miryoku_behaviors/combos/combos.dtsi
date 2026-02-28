@@ -1,3 +1,8 @@
+#include "../../../miryoku_behaviors/combos/constants.h"
+#include "../../../miryoku_behaviors/combos/macros.dtsi"
+#include "../../../miryoku_behaviors/combos/switches.h"
+
+
 / {
     combos {
 

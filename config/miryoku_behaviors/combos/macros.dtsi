@@ -1,0 +1,10 @@
+#define COMBO(LAYER, KEY1, KEY2, BINDING) \
+combos_ ## LAYER ## _ ## KEY1 ## KEY2 { \
+  require-prior-idle-ms = <COMBOS_WAIT_MS>; \
+  timeout-ms = <COMBOS_TIMEOUT>; \
+  layers = <LAYER>; \
+  key-positions = <KEY1 KEY2>; \
+  bindings = <BINDING>; \
+};
+
+#define SWITCH(ROW, COL) TOTAL_SWITCHES * ROW + COL

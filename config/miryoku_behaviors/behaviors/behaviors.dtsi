@@ -1,0 +1,29 @@
+#include "config.h"
+#include "layer_tap/behavior.dtsi"
+#include "mod_morph/behavior.dtsi"
+#include "mod_tap/behavior.dtsi"
+#include "double_tap/behavior.dtsi"
+
+
+/ {
+  behaviors {
+    soff: soft_off {
+        compatible = "zmk,behavior-soft-off";
+        #binding-cells = <0>;
+        // split-peripheral-off-on-press;
+        hold-time-ms = <2000>; // Only turn off it the key is held for 2 seconds or longer.
+    };
+  };
+};
+
+#define U_EP_TOG &ext_power EP_TOG
+
+#define U_MT(MOD, TAP) &u_mt MOD TAP
+#define U_LT(LAYER, TAP) &u_lt LAYER TAP
+#define HYP LS(LC(LA(LGUI)))
+
+#define U_RDO &kp K_AGAIN
+#define U_PST &kp LS(INS)
+#define U_CPY &kp LC(INS)
+#define U_CUT &kp LS(DEL)
+#define U_UND &kp K_UNDO

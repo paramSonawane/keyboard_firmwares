@@ -1,0 +1,3 @@
+#include "macro.dtsi"
+
+MIRYOKU_DOUBLE_TAP_GUARD(u_bootloader, &bootloader)

@@ -10,6 +10,6 @@
 
 
         // from game layer to base layer
-        COMBO(U_SYM, RIGHT_THUMB_OUTER, BOTTOM_RIGHT_CORNER, &to U_BASE)
+        COMBO(U_SYM, FN_KEY, BOTTOM_RIGHT_CORNER, &to U_BASE)
     };
 };

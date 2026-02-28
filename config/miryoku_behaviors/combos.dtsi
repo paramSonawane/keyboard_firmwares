@@ -1,144 +1,58 @@
-#define TIMEOUT_MS 50
-#define WAIT_MS 10
-
-/ { 
+/ {
     combos {
 
         compatible = "zmk,combos";
 
-        combo_caps_word {
-            timeout-ms = <TIMEOUT_MS>;
-            key-positions = <16 19>;
-            bindings = <&caps_word>;   
-            layers = <0>;
-        };
+        // caps lock
+        COMBO(U_BASE, MIDDLE_LEFTINDEX, MIDDLE_RIGHTINDEX, &caps_word)
 
-       combo_minus {
-            require-prior-idle-ms = <WAIT_MS>;
-            timeout-ms = <TIMEOUT_MS>;
-            key-positions = <9 41>;
-            bindings = <&kp MINUS>;
-            layers = <0>;
-        };
+        // -
+        COMBO(U_BASE, TOP_RIGHTRING, RIGHT_THUMB_OUTER, &kp MINUS)
 
-        combo_equal {
-            require-prior-idle-ms = <WAIT_MS>;
-            timeout-ms = <TIMEOUT_MS>;
-            key-positions = <21 41>;
-            bindings = <&kp EQUAL>;
-            layers = <0>;
-        };
+        // =
+        COMBO(U_BASE, MIDDLE_RIGHTRING, RIGHT_THUMB_OUTER, &kp EQUAL)
 
-        combo_under {
-            require-prior-idle-ms = <WAIT_MS>;
-            timeout-ms = <TIMEOUT_MS>;
-            key-positions = <35 41>;
-            bindings = <&kp UNDER>;
-            layers = <0>;
-       };
+       // _
+       COMBO(U_BASE, BOTTOM_RIGHTRING, RIGHT_THUMB_OUTER, &kp UNDER)
 
-        combo_bracket_close {
-            require-prior-idle-ms = <WAIT_MS>;
-            timeout-ms = <TIMEOUT_MS>;
-            key-positions = <7 41>;
-            bindings = <&kp RBKT>;
-            layers = <0>;
-        };
+        // [
+        COMBO(U_BASE, TOP_RIGHTINDEX, RIGHT_THUMB_OUTER, &kp RBKT)
 
-        combo_braces_close {
-            require-prior-idle-ms = <WAIT_MS>;
-            timeout-ms = <TIMEOUT_MS>;
-            key-positions = <19 41>;
-            bindings = <&kp RBRC>;
-            layers = <0>;
-        };
+        // }
+        COMBO(U_BASE, MIDDLE_RIGHTINDEX, RIGHT_THUMB_OUTER, &kp RBRC)
 
-        combo_paran_close {
-            require-prior-idle-ms = <WAIT_MS>;
-            timeout-ms = <TIMEOUT_MS>;
-            key-positions = <33 41>;
-            bindings = <&kp RPAR>;
-            layers = <0>;
-        };   
+        // )
+        COMBO(U_BASE, BOTTOM_RIGHTINDEX, RIGHT_THUMB_OUTER, &kp RPAR)
 
-       combo_single_quote {
-            require-prior-idle-ms = <WAIT_MS>;
-            timeout-ms = <TIMEOUT_MS>;
-            key-positions = <8 41>;
-            bindings = <&kp SQT>;
-            layers = <0>;
-        };
+        // '
+        COMBO(U_BASE, TOP_RIGHTMIDDLE, RIGHT_THUMB_OUTER, &kp SQT)
 
-        combo_double_quote {
-            require-prior-idle-ms = <WAIT_MS>;
-            timeout-ms = <TIMEOUT_MS>;
-            key-positions = <20 41>;
-            bindings = <&kp DQT>;
-            layers = <0>;
-        };    
+        // "
+        COMBO(U_BASE, MIDDLE_RIGHTMIDDLE, RIGHT_THUMB_OUTER, &kp DQT)
 
-        combo_back_ticks {
-            require-prior-idle-ms = <WAIT_MS>;
-            timeout-ms = <TIMEOUT_MS>;
-            key-positions = <34 41>;
-            bindings = <&kp GRAVE>;
-            layers = <0>;
-        };   
+        // `
+        COMBO(U_BASE, BOTTOM_RIGHTINDEX, RIGHT_THUMB_OUTER, &kp GRAVE)
 
-        combo_bracket_open {
-            require-prior-idle-ms = <WAIT_MS>;
-            timeout-ms = <TIMEOUT_MS>;
-            key-positions = <40 4>;
-            bindings = <&kp LBKT>;
-            layers = <0>;
-        };
+        // [
+        COMBO(U_BASE, TOP_LEFTINDEX, LEFT_THUMB_OUTER, &kp LBKT)
 
-        combo_braces_open {
-            require-prior-idle-ms = <WAIT_MS>;
-            timeout-ms = <TIMEOUT_MS>;
-            key-positions = <40 16>;
-            bindings = <&kp LBRC>;
-            layers = <0>;
-        };
- 
-        combo_paran_open {
-            require-prior-idle-ms = <WAIT_MS>;
-            timeout-ms = <TIMEOUT_MS>;
-            key-positions = <40 28>;
-            bindings = <&kp LPAR>;
-            layers = <0>;
-        };    
+        // {
+        COMBO(U_BASE, MIDDLE_LEFTINDEX, LEFT_THUMB_OUTER, &kp LBRC)
 
-        combo_esc {
-            require-prior-idle-ms = <WAIT_MS>;
-            timeout-ms = <TIMEOUT_MS>;
-            key-positions = <40 15>;
-            bindings = <&kp ESC>;
-            layers = <0>;
-        };
+        // (
+        COMBO(U_BASE, BOTTOM_LEFTINDEX, LEFT_THUMB_OUTER, &kp LPAR)
 
-        combo_tab {
-            require-prior-idle-ms = <WAIT_MS>;
-            timeout-ms = <TIMEOUT_MS>;
-            key-positions = <40 14>;
-            bindings = <&kp TAB>;
-            layers = <0>;
-        };    
+        // escape
+        COMBO(U_BASE, MIDDLE_LEFTMIDDLE, LEFT_THUMB_OUTER, &kp ESC)
 
-        combo_del {
-            require-prior-idle-ms = <WAIT_MS>;
-            timeout-ms = <TIMEOUT_MS>;
-            key-positions = <40 27>;
-            bindings = <&kp DEL>;
-            layers = <0>;
-        };    
+        // tab
+        COMBO(U_BASE, MIDDLE_LEFTRING, LEFT_THUMB_OUTER, &kp TAB)
 
-        combo_enter{
-            // require-prior-idle-ms = <WAIT_MS>;
-            timeout-ms = <100>;
-            key-positions = <40 41>;
-            bindings = <&kp RET>;
-            layers = <0>;
-        };    
+        // del
+        COMBO(U_BASE, BOTTOM_LEFTMIDDLE, LEFT_THUMB_OUTER, &kp DEL)
+
+        // TODO: disable wait time
+        // enter
+        COMBO(U_BASE, BOTTOM_LEFTMIDDLE, LEFT_THUMB_OUTER, &kp RET)
     };
 };

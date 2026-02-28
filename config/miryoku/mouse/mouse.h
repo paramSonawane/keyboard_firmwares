@@ -6,11 +6,13 @@
   delay-ms = <U_MOUSE_MOVE_DELAY>;
 };
 
+/*
 &msc {
   acceleration-exponent = <U_MOUSE_SCROLL_EXPONENT>;
   time-to-max-speed-ms = <U_MOUSE_SCROLL_TIME>;
   delay-ms = <U_MOUSE_SCROLL_DELAY>;
 };
+*/
 
 #define U_BTN1 &mkp MB1
 #define U_BTN2 &mkp MB2

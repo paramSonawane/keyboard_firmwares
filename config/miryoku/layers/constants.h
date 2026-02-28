@@ -3,4 +3,4 @@
 #define U_SYM 2
 #define U_NAV 3
 #define U_FUN 4
-#define U_MOUSE 6
+#define U_MOUSE 5

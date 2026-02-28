@@ -1,6 +1,6 @@
-#include "../../../miryoku_behaviors/combos/constants.h"
-#include "../../../miryoku_behaviors/combos/macros.dtsi"
-#include "../../../miryoku_behaviors/combos/switches.h"
+#include "constants.h"
+#include "macros.dtsi"
+#include "switches.h"
 
 
 / {

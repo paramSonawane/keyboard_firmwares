@@ -9,3 +9,5 @@ include:
     shield: corny_left rgbled_adapter
   - board: seeeduino_xiao_ble
     shield: corny_right rgbled_adapter
+  - board: nice_nano_v2
+    shield: ciy_tester_68

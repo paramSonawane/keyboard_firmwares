@@ -1,0 +1,6 @@
+if SHIELD_CIY_TESTER_68
+
+config ZMK_KEYBOARD_NAME
+    default "CIY"
+
+endif

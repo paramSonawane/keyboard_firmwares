@@ -7,7 +7,6 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/ext_power.h>
 
-#include "../../../miryoku_behaviors/configs.h"
 #include "../../../miryoku_behaviors/constants.h"
 #include "../../../miryoku_behaviors/macros.dtsi"
 #include "../../../miryoku_behaviors/behaviors/behavior.dtsi"

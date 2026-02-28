@@ -1,6 +1,3 @@
-// Copyright 2022 Manna Harbour
-// https://github.com/manna-harbour/miryoku
-
 #define MIRYOKU_DOUBLE_TAP_GUARD(NAME, BINDING) \
 / { \
   behaviors { \
@@ -25,3 +22,18 @@ MIRYOKU_LAYER_LIST
 MIRYOKU_DOUBLE_TAP_GUARD(u_bootloader, &bootloader)
   // #endif
 // #endif
+
+
+#define COMBOS_TIMEOUT 50
+#define COMBOS_WAIT_MS 10
+#define COMBO(LAYER, KEY1, KEY2, BINDING) \
+combos_ ## LAYER ## _ ## KEY1 ## KEY2 { \
+  require-prior-idle-ms = <COMBOS_WAIT_MS>; \
+  timeout-ms = <COMBOS_TIMEOUT>; \
+  layers = <LAYER>; \
+  key-positions = <KEY1 KEY2>; \
+  bindings = <BINDING>; \
+};
+
+#define TOTAL_SWITCHES 12
+#define SWITCH(ROW, COL) TOTAL_SWITCHES * ROW + COL

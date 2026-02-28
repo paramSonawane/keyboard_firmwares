@@ -9,7 +9,7 @@
 
 #include "../../../miryoku_behaviors/constants.h"
 #include "../../../miryoku_behaviors/macros.dtsi"
-#include "../../../miryoku_behaviors/behaviors/behavior.dtsi"
+#include "../../../miryoku_behaviors/behaviors/behaviors.dtsi"
 #include "../../../miryoku_behaviors/combos/combos.dtsi"
 #include "../../../miryoku_behaviors/layers/layers.h"
 #include "../../../miryoku_behaviors/mouse/mouse.h"

@@ -7,38 +7,19 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/ext_power.h>
 
-#define U_TAPPING_TERM 200
-
-#define U_MACRO_VA_ARGS(macro, ...) macro(__VA_ARGS__)
-#define U_STRINGIFY(x) #x
-#define U_MACRO(name,...) \
-/ { \
-  macros { \
-    name: name { \
-      compatible = "zmk,behavior-macro"; \
-      #binding-cells = <0>; \
-      __VA_ARGS__ \
-    }; \
-  }; \
-};
-
-
+#include "../../../miryoku_behaviors/configs.h"
+#include "../../../miryoku_behaviors/constants.h"
+#include "../../../miryoku_behaviors/macros.dtsi
 #include "../../../miryoku_behaviors/miryoku_babel/miryoku_layer_list.h"
+#include "../../../miryoku_behaviors/combos/combos.dtsi"
 #include "../../../miryoku_behaviors/miryoku_clipboard.h"
-#include "../../../miryoku_behaviors/miryoku_double_tap_guard.dtsi"
-#include "../../../miryoku_behaviors/miryoku_double_tap_guard.h"
 #include "../../../miryoku_behaviors/miryoku_shift_functions.h"
 #include "../../../miryoku_behaviors/miryoku_shift_functions.dtsi"
 #include "../../../miryoku_behaviors/miryoku_behaviors.dtsi"
 #include "../../../miryoku_behaviors/miryoku_behaviors.h"
 #include "../../../miryoku_behaviors/miryoku_kludge_mousekeyspr.h"
 #include "../../../miryoku_behaviors/miryoku_kludge_mousekeyspr.dtsi"
-#include "../../../miryoku_behaviors/combos.dtsi"
 
-#define U_NP &none // key is not present
-#define U_NA &none // present but not available for use
-#define U_NU &none // available but not used
-#define M_SENS 1250
 #define MOUSE_UP &mmv MOVE_Y(-M_SENS)
 #define MOUSE_DN &mmv MOVE_Y(M_SENS)
 #define MOUSE_LF &mmv MOVE_X(-M_SENS)
@@ -119,7 +100,7 @@
                 U_NU U_NA U_BTN4   MOUSE_UP U_BTN5   U_NA             U_RDO   U_NA      U_NA       U_NA      U_CUT    U_NU
                 U_NU U_NA MOUSE_LF MOUSE_DN MOUSE_RT U_NA             &kp HYP &kp LSHFT &kp LCTRL  &kp LALT  &kp LGUI U_NU
                 U_NU U_NA U_NA     U_NA     U_NA     U_NA   U_NU U_NU U_WH_L  U_WH_D    U_WH_U     U_WH_R    U_NU     U_NU
-                                   U_BTN3   U_BTN2   U_BTN1           U_NA    U_NA      U_NA                 
+                                   U_BTN3   U_BTN2   U_BTN1           U_NA    U_NA      U_NA
             >;
             sensor-bindings = <
                 &inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN

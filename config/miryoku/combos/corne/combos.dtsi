@@ -19,6 +19,6 @@
 //                └───┴───┴────┘   └────┴───┴───┘
         // TODO: disable wait time
         // enter
-        COMBO(U_BASE, RIGHT_THUMB_OUTER, LEFT_THUMB_OUTER, &kp RET)
+        QUICK_COMBO(U_BASE, RIGHT_THUMB_OUTER, LEFT_THUMB_OUTER, &kp RET)
     };
 };

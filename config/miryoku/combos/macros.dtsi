@@ -6,3 +6,12 @@ combos_ ## LAYER ## _ ## KEY1 ## KEY2 { \
   key-positions = <KEY1 KEY2>; \
   bindings = <BINDING>; \
 };
+
+#define QUICK_COMBO(LAYER, KEY1, KEY2, BINDING) \
+quick_combos_ ## LAYER ## _ ## KEY1 ## KEY2 { \
+  require-prior-idle-ms = <0>; \
+  timeout-ms = <COMBOS_TIMEOUT>; \
+  layers = <LAYER>; \
+  key-positions = <KEY1 KEY2>; \
+  bindings = <BINDING>; \
+};

@@ -21,6 +21,6 @@
 // │    │    │    │                        │ FN│   │   │   │   │BSE│
 // └────┴────┴────┴────────────────────────┴───┴───┴───┴───┴───┴───┘
         // from game layer to base layer
-        COMBO(U_SYM, FN_KEY, BOTTOM_RIGHT_CORNER, &to U_BASE)
+        QUICK_COMBO(U_SYM, FN_KEY, BOTTOM_RIGHT_CORNER, &to U_BASE)
     };
 };

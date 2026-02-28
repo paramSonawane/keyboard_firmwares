@@ -5,20 +5,25 @@
 
 / {
     combos {
-
         compatible = "zmk,combos";
 
-        // caps lock
-        COMBO(U_BASE, MIDDLE_LEFTINDEX, MIDDLE_RIGHTINDEX, &caps_word)
+        // tab
+        COMBO(U_BASE, MIDDLE_LEFTRING, LEFT_THUMB_OUTER, &kp TAB)
 
-        // -
-        COMBO(U_BASE, TOP_RIGHTRING, RIGHT_THUMB_OUTER, &kp MINUS)
+        // [
+        COMBO(U_BASE, TOP_LEFTINDEX, LEFT_THUMB_OUTER, &kp LBKT)
 
-        // =
-        COMBO(U_BASE, MIDDLE_RIGHTRING, RIGHT_THUMB_OUTER, &kp EQUAL)
+        // {
+        COMBO(U_BASE, MIDDLE_LEFTINDEX, LEFT_THUMB_OUTER, &kp LBRC)
 
-       // _
-       COMBO(U_BASE, BOTTOM_RIGHTRING, RIGHT_THUMB_OUTER, &kp UNDER)
+        // (
+        COMBO(U_BASE, BOTTOM_LEFTINDEX, LEFT_THUMB_OUTER, &kp LPAR)
+
+        // escape
+        COMBO(U_BASE, MIDDLE_LEFTMIDDLE, LEFT_THUMB_OUTER, &kp ESC)
+
+        // del
+        COMBO(U_BASE, BOTTOM_LEFTMIDDLE, LEFT_THUMB_OUTER, &kp DEL)
 
         // [
         COMBO(U_BASE, TOP_RIGHTINDEX, RIGHT_THUMB_OUTER, &kp RBKT)
@@ -36,28 +41,22 @@
         COMBO(U_BASE, MIDDLE_RIGHTMIDDLE, RIGHT_THUMB_OUTER, &kp DQT)
 
         // `
-        COMBO(U_BASE, BOTTOM_RIGHTINDEX, RIGHT_THUMB_OUTER, &kp GRAVE)
+        COMBO(U_BASE, BOTTOM_RIGHTMIDDLE, RIGHT_THUMB_OUTER, &kp GRAVE)
 
-        // [
-        COMBO(U_BASE, TOP_LEFTINDEX, LEFT_THUMB_OUTER, &kp LBKT)
+        // -
+        COMBO(U_BASE, TOP_RIGHTRING, RIGHT_THUMB_OUTER, &kp MINUS)
 
-        // {
-        COMBO(U_BASE, MIDDLE_LEFTINDEX, LEFT_THUMB_OUTER, &kp LBRC)
+        // =
+        COMBO(U_BASE, MIDDLE_RIGHTRING, RIGHT_THUMB_OUTER, &kp EQUAL)
 
-        // (
-        COMBO(U_BASE, BOTTOM_LEFTINDEX, LEFT_THUMB_OUTER, &kp LPAR)
-
-        // escape
-        COMBO(U_BASE, MIDDLE_LEFTMIDDLE, LEFT_THUMB_OUTER, &kp ESC)
-
-        // tab
-        COMBO(U_BASE, MIDDLE_LEFTRING, LEFT_THUMB_OUTER, &kp TAB)
-
-        // del
-        COMBO(U_BASE, BOTTOM_LEFTMIDDLE, LEFT_THUMB_OUTER, &kp DEL)
+       // _
+       COMBO(U_BASE, BOTTOM_RIGHTRING, RIGHT_THUMB_OUTER, &kp UNDER)
 
         // TODO: disable wait time
         // enter
-        COMBO(U_BASE, BOTTOM_LEFTMIDDLE, LEFT_THUMB_OUTER, &kp RET)
+        COMBO(U_BASE, RIGHT_THUMB_OUTER, LEFT_THUMB_OUTER, &kp RET)
+
+        // caps lock
+        COMBO(U_BASE, MIDDLE_LEFTINDEX, MIDDLE_RIGHTINDEX, &caps_word)
     };
 };
